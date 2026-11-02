@@ -1,0 +1,21 @@
+# build output
+build/
+*.app
+*.o
+# test-runner binaries (built with Makefile.linux / by hand)
+/runtest
+/actext
+/actext_*
+/pcdump
+/rt_md
+/tools/runtest
+/tools/actext
+/tools/shadertest/shadertest
+/tools/shadertest/obj/
+/tools/shadertest/shader_cpu.inc
+# ROMs and saves never belong in the repo
+*.nes
+*.NES
+*.sav
+*.state*
+.DS_Store

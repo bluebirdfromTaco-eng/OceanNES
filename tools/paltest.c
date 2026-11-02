@@ -1,0 +1,4 @@
+#include "../src/nes.h"
+#include <stdio.h>
+int main(){uint32_t p[512];palette_generate(p);int idx[]={0x00,0x01,0x02,0x06,0x09,0x0A,0x12,0x16,0x1A,0x20,0x21,0x27,0x2A,0x30,0x3D};
+for(int k=0;k<15;k++){uint32_t c=p[idx[k]];printf("%02X: %3d %3d %3d\n",idx[k],(c>>16)&255,(c>>8)&255,c&255);}}

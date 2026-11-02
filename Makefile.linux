@@ -1,0 +1,5 @@
+CC=gcc
+CFLAGS=-O2 -g -Wall -Wextra -Wno-unused-parameter -std=gnu99
+SRC=src/cpu.c src/ppu.c src/apu.c src/cart.c src/nes.c src/palette.c
+runtest: $(SRC) tools/runtest.c src/nes.h
+	$(CC) $(CFLAGS) -o runtest $(SRC) tools/runtest.c -lm
