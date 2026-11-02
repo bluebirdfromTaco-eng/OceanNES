@@ -294,3 +294,8 @@ the video filters; tools/ has the headless
 test runner used to verify accuracy (make -f Makefile.linux builds it on Linux/macOS,
 then ./runtest rom.nes). tools/shadertest/ runs the Metal shaders on the CPU to
 check the filters (the NTSC decode reproduces every palette colour to within ~1/255).
+
+LICENSE
+-------
+
+oceanNES is released under the MIT License (see the LICENSE file).
